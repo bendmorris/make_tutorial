@@ -10,7 +10,7 @@ output_image = sys.argv[2]
 
 # read in the input tree
 tree = bp.read(tree_file, 'newick')
-tree.root_at_midpoint()
+#tree.root_at_midpoint()
 
 # draw the tree
 bp._utils.draw(tree, do_show=False)
