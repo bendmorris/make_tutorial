@@ -14,4 +14,5 @@ tree = bp.read(tree_file, 'newick')
 
 # draw the tree
 bp._utils.draw(tree, do_show=False)
+plt.title('Figure title')
 plt.savefig(output_image)
