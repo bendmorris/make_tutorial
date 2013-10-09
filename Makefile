@@ -2,6 +2,7 @@ all: $(patsubst %.fasta, %.png, $(wildcard *.fasta))
 
 clean:
 	rm -f *.aln *.phy* *.png RAxML* *.new
+.SECONDARY: %.fasta.aln %.phy %.new
 
 # make the alignment, in FASTA format
 %.fasta.aln: %.fasta
